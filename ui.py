@@ -1,4 +1,14 @@
 import streamlit as st
+# ui.py — componenti UI riutilizzabili
+
+def render_footer(name: str, linkedin: str = None, github: str = None):
+    parts = [f"Progetto di **{name}**"]
+    if linkedin:
+        parts.append(f"[LinkedIn]({linkedin})")
+    if github:
+        parts.append(f"[GitHub]({github})")
+    st.divider()
+    st.caption(" · ".join(parts))
 
 def render_field(key, meta, current):
     label = meta.get("label", key)
