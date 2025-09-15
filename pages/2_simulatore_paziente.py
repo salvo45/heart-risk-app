@@ -8,3 +8,8 @@ colesterolo, ecc.)
  - una spiegazione breve sui fattori che pesano di più.
 
 """)
+
+from ui import render_footer, render_field
+from static import FEATURES, DEFAULT_PROFILE, ORDER
+if "patient" not in st.session_state:
+ st.session_state["patient"] = DEFAULT_PROFILE.copy()
