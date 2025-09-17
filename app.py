@@ -6,4 +6,5 @@ st.title("Heart Risk Prediction App")
 st.write(" web-app didattica per stimare una percentuale di rischio cardiovascolare a partire da alcuni parametri clinici basilari.")
 
 
-
+from ui import render_footer
+render_footer("Salvatore Cammarata",github="https://github.com/SalvoCammarata")
